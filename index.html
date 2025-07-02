@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auxílio Sleep</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="container">
+    <h2>Auxílio Sleep</h2>
+    <details>
+      <summary>Sistema Avançado</summary>
+      <label><input type="checkbox">120 FPS</label>
+      <label><input type="checkbox">No Recoil</label>
+    </details>
+    <details>
+      <summary>Ajustes de Mira</summary>
+      <label><input type="checkbox">Aimbot 90%</label>
+      <label><input type="checkbox">Head Trick</label>
+      <label><input type="checkbox">Neural Aim</label>
+      <div class="fov-container">
+        <label for="fov">FOV</label>
+        <input type="range" id="fov" min="0" max="10" value="0" oninput="fovValue.innerText = this.value">
+        <span class="fov-value" id="fovValue">0</span>
+      </div>
+    </details>
+    <button class="inject-btn" onclick="inject()">Injetar Pastas</button>
+    <div id="injectMsg"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
